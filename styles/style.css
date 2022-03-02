@@ -26,33 +26,39 @@ h1{
 
 #slideContainer{
     margin: auto;
-    width: 65vw;
-    overflow-x: hidden;
-    background-color: green;
+    width: 60vw;
+    overflow: hidden;
 }
 
-#slideContainer::-webkit-scrollbar {
+.slideContent::-webkit-scrollbar {
     display: none;
   }
 
 #carousel{
-    user-select: none;
     display: flex;
-    width: 100%;
-    
+    width: 500vw;
+    user-select: none;
+    background-color: gold;
+    /* transform: translateX(-60vw); */
 }
 
 .slideContent{
-    margin: auto;
-    max-width: 65vw;
-    max-height: 80vh;
-    /* overflow-y: scroll;
-    overflow-x: visible; */
+    width: 60vw;
+    height: 82vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .slideContent img{
     object-fit: cover;
-    width: 65vw;
+    width: 60vw;
+}
+
+.slideContent p{
+    font-size: 2rem;
+    padding: 1rem 3rem 3rem 3rem;
+    color: white;
+    text-align: justify;
 }
 
 
