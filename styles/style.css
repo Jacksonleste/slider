@@ -31,14 +31,26 @@ h1{
 }
 
 .slideContent::-webkit-scrollbar {
-    display: none;
-  }
+    /* display: none; */
+    /* background-color: black; */
+    width: 1rem;
+}
+
+.slideContent::-webkit-scrollbar-track{
+    background: black;
+}
+
+.slideContent::-webkit-scrollbar-thumb{
+    background-color: #313131;
+    border-radius: 2rem;
+    border: 3px solid black;
+}
 
 #carousel{
     display: flex;
     width: 500vw;
     user-select: none;
-    background-color: gold;
+    /* background-color: gold; */
     /* transform: translateX(-60vw); */
 }
 
@@ -52,6 +64,7 @@ h1{
 .slideContent img{
     object-fit: cover;
     width: 60vw;
+    -webkit-user-drag: none;
 }
 
 .slideContent p{

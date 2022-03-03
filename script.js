@@ -9,8 +9,7 @@ let carousel = document.querySelector('#carousel'),
     currentSlide = 1
 
 
-carousel.style.height = `${images[currentSlide].clientHeight}px`
-
+    
 carousel.style.transform = (`translateX(${-width * currentSlide}px)`)
 
 function next(){
@@ -49,7 +48,6 @@ function lastSlides(){
 function resizeSlide(){
     width = slides[0].getBoundingClientRect().width
     carousel.style.transform = (`translateX(${-width * currentSlide}px)`)
-    carousel.style.height = `${images[currentSlide].clientHeight}px`
 }
 
 
